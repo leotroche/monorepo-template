@@ -7,8 +7,8 @@ const app = express()
 app.use(json())
 app.use(cors())
 
-app.get('/', (_, res) => {
-	res.status(200).json({ message: 'Hello, world!' })
+app.get('/api', (_, res) => {
+	res.status(200).json({ message: 'Express + TS' })
 })
 
 app.listen(SERVER_PORT, () => {
