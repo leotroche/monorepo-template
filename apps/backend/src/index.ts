@@ -4,12 +4,12 @@ import { SERVER_PORT } from './config/env'
 
 const app = express()
 
-app.use(json())
 app.use(
 	cors({
-		origin: 'http://localhost:5173',
+		origin: ['http://localhost:5173'],
 	}),
 )
+app.use(json())
 
 app.get('/api', (_, res) => {
 	res.status(200).json({ message: 'Express + TS' })
