@@ -1,9 +1,9 @@
-import express from "express";
+import express from 'express'
 
-export const app = express();
+export const app = express()
 
-app.use(express.json());
+app.use(express.json())
 
-app.get("/", (_, res) => {
-	res.status(200).json({ message: "Hello, world!" });
-});
+app.get('/', (_, res) => {
+	res.status(200).json({ message: 'Hello, world!' })
+})
